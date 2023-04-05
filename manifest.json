@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "NoWikipediaAd",
+  "version": "0.1.0",
+  "description": "Wikipediaの募金広告をdeleteします",
+  "content_scripts": [
+    {
+      "matches": ["*://*.wikipedia.org/*"],
+      "js": ["./scripts/script.js"]
+    }
+  ],
+  "icons": {
+    "128": "./images/icon.png"
+  }
+}
